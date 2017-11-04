@@ -1,0 +1,36 @@
+// font stacks
+
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Open+Sans';
+$font-family--primary   : 'Open Sans', sans-serif;
+
+// font weights
+
+$font-weight--thin        : 100;
+$font-weight--light       : 300;
+$font-weight--medium      : 400;
+$font-weight--bold        : 700;
+$font-weight--ultra-bold  : 900;
+
+// text
+
+$base__font-size  : 16px;
+$base__line       : 26px;
+
+
+
+// border radius
+
+$br--default      : .3em;
+$br--round        : 50%;
+
+// breakpoints
+
+$brkpoint--sm     : 1px;
+$brkpoint--md     : 768px;
+
+//grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1400px;

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  @extend %center;
+  @include e(video){
+    width: 100%;
+    @extend %center;
+  }
+  @include e(transcript){
+    width: 85%;
+    @extend %center;
+    @include mq(medium){
+      width: 100%;
+    }
+  }
+  @include mq(medium){
+    margin-top: em(44px);
+    width: 90%;
+  }
+}
