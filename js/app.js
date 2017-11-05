@@ -20,9 +20,11 @@ video.addEventListener("timeupdate", function () {
   }
 });
 
+
 for (let i = 0; i < span.length; i++) {
-  span[i].addEventListener('click', function () {
+  span[i].addEventListener('click', function (event) {
     video.currentTime = event.target.getAttribute("data-startTime");
+    if( !event ) event = window.event;
     span[i].classList.remove("mouseover");
   });
   span[i].addEventListener('mouseover', function () {
