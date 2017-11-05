@@ -8,4 +8,12 @@
     font-size: em(18px);
     @include mejs-colors($mejs-time-colors);
   }
+  @include e(captions){
+    @include mejs(layer){
+      color: $color-text-captions;
+      bottom: em(10px);
+      background: transparent;
+      font-family: $font-family--primary;
+    }
+  }
 }

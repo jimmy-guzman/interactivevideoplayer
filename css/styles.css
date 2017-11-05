@@ -43,6 +43,11 @@ p {
     background-color: #B5B48D; }
   .mejs__time-float {
     background-color: #B5B48D; }
+.mejs__captions-layer {
+  color: #FFEECD;
+  bottom: 0.625em;
+  background: transparent;
+  font-family: "Open Sans", sans-serif; }
 
 * {
   box-sizing: border-box; }
