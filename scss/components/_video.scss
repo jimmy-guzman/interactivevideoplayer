@@ -3,7 +3,7 @@
 }
 .mejs {
   @include e(time){
-    color: $color-body;
+    color: $color-text-mejs;
     font-size: em(18px);
     @include mejs-colors($mejs-time-colors);
   }
@@ -17,7 +17,7 @@
     @include mejs(selector){
       @include mejs(list){
         @include mejs(item){
-          color: $color-text-captions;
+          color: $color-text-mejs;
         }
       }
     }
