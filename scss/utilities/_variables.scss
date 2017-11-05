@@ -17,6 +17,29 @@ $base__font-size  : 16px;
 $base__line       : 26px;
 
 
+//descriptive color variables
+
+$white            : #fff;
+$black            : #000;
+$bright-grey      : #384047;
+$cape-cod         : #354743;
+$heathered-gray   : #B5B48D;
+$maize            : #F5D29D;
+$desert-sand      : #EDD1B3;
+$barley-white     : #FFEECD;
+
+//functional color variables
+
+$color-primary      : $cape-cod;
+$color-secondary    : #F5D29D;
+
+$color-text-light   : $heathered-gray;
+$color-text-base    : $cape-cod;
+$color-text-dark    : $black;
+
+$color-highlight : $maize;
+
+$color-body         : $barley-white;
 
 // border radius
 

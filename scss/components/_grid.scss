@@ -1,5 +1,7 @@
+
 .container {
   width: 100%;
+
   @extend %center;
   @include e(video){
     width: 100%;

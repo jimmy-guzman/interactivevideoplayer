@@ -5,7 +5,14 @@
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 26px; }
+  line-height: 26px;
+  color: #354743; }
+
+.highlight {
+  background: #F5D29D; }
+
+.clicked {
+  color: grey; }
 
 .container {
   width: 100%; }
@@ -23,5 +30,8 @@ p {
 
 * {
   box-sizing: border-box; }
+
+body {
+  background: #FFEECD; }
 
 /*# sourceMappingURL=styles.css.map */
