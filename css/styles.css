@@ -11,8 +11,8 @@ p {
 .highlight {
   background: #F5D29D; }
 
-.clicked {
-  color: grey; }
+.mouseover {
+  color: #B5B48D; }
 
 .container {
   width: 100%; }
