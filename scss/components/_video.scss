@@ -14,6 +14,10 @@
       background: transparent;
       font-family: $font-family--primary;
     }
+    @include mejs(text){
+      background: $color-primary;
+      box-shadow: none;
+    }
     @include mejs(selector){
       @include mejs(list){
         @include mejs(item){

@@ -48,6 +48,9 @@ p {
   bottom: 0.625em;
   background: transparent;
   font-family: "Open Sans", sans-serif; }
+.mejs__captions-text {
+  background: #354743;
+  box-shadow: none; }
 .mejs__captions-selector-list-item {
   color: #FFEECD; }
 
