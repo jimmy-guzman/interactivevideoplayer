@@ -1,17 +1,11 @@
-// You can use either a string for the player ID (i.e., `player`),
-// or `document.querySelector()` for any selector
-var player = new MediaElementPlayer('player', {
-  pluginPath: "/path/to/shims/",
-  alwaysShowControls: "true",
-  // When using `MediaElementPlayer`, an `instance` argument
-  // is available in the `success` callback
-  success: function(mediaElement, originalNode, instance) {
-
-  }
-});
-
 const span = document.getElementById("transcript").getElementsByTagName("span");
 const video = document.getElementsByTagName("video")[0];
+
+let player = new MediaElementPlayer('player', {
+  pluginPath: "/path/to/shims/",
+  alwaysShowControls: "true",
+  success: function(mediaElement, originalNode, instance) {}
+});
 
 video.addEventListener("timeupdate", function () {
   for (let i = 0; i < span.length; i++) {
@@ -25,7 +19,6 @@ video.addEventListener("timeupdate", function () {
     }
   }
 });
-
 
 for (let i = 0; i < span.length; i++) {
   span[i].addEventListener('click', function () {
