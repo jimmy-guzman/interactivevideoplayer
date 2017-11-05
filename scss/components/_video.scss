@@ -1,7 +1,6 @@
-.mejs__inner .mejs__controls {
+.mejs__inner .mejs__controls, .mejs__captions-button>.mejs__captions-selector  {
   background: $color-primary;
 }
-
 .mejs {
   @include e(time){
     color: $color-body;
@@ -14,6 +13,13 @@
       bottom: em(10px);
       background: transparent;
       font-family: $font-family--primary;
+    }
+    @include mejs(selector){
+      @include mejs(list){
+        @include mejs(item){
+          color: $color-text-captions;
+        }
+      }
     }
   }
 }

@@ -29,7 +29,7 @@ p {
       width: 90%;
       max-width: 80em; } }
 
-.mejs__inner .mejs__controls {
+.mejs__inner .mejs__controls, .mejs__captions-button > .mejs__captions-selector {
   background: #354743; }
 
 .mejs__time {
@@ -48,6 +48,8 @@ p {
   bottom: 0.625em;
   background: transparent;
   font-family: "Open Sans", sans-serif; }
+.mejs__captions-selector-list-item {
+  color: #FFEECD; }
 
 * {
   box-sizing: border-box; }
