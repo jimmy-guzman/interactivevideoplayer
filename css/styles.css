@@ -29,6 +29,21 @@ p {
       width: 90%;
       max-width: 80em; } }
 
+.mejs__inner .mejs__controls {
+  background: #354743; }
+
+.mejs__time {
+  color: #FFEECD;
+  font-size: 1.125em; }
+  .mejs__time-buffering {
+    background-color: #B5B48D; }
+  .mejs__time-current {
+    background-color: #F5D29D; }
+  .mejs__time-hovered {
+    background-color: #B5B48D; }
+  .mejs__time-float {
+    background-color: #B5B48D; }
+
 * {
   box-sizing: border-box; }
 

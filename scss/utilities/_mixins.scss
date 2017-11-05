@@ -12,6 +12,11 @@
   }
 }
 
+@mixin mejs($modifier) {
+  &-#{$modifier} {
+    @content;
+  }
+}
 // media queries
 
 @mixin mq($break) {
@@ -30,24 +35,13 @@
   }
 }
 
-// flexbox
-@mixin flex($disp: null, $flow: null, $just: null, $flex: null) {
-    display: $disp;
-    flex-flow: $flow;
-    justify-content: $just;
-    flex: $flex;
-}
+//mejs-colors
 
-// grid columns
-
-@mixin g-columns {
-  @for $i from 1 through $g-col-count {
-    $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;
-    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
-
-    // Generate column modifier classes
-    &--#{$i} {
-      width: percentage($target / $context);
+@mixin mejs-colors ($map, $selector: null) {
+  @each $theme, $color in $map {
+    &-#{$theme}#{$selector} {
+      background-color: $color;
+      @content;
     }
   }
 }

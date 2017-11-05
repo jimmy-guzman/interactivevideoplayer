@@ -1,0 +1,11 @@
+.mejs__inner .mejs__controls {
+  background: $color-primary;
+}
+
+.mejs {
+  @include e(time){
+    color: $color-body;
+    font-size: em(18px);
+    @include mejs-colors($mejs-time-colors);
+  }
+}

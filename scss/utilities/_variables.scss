@@ -3,14 +3,6 @@
 $font-url--google       : 'https://fonts.googleapis.com/css?family=Open+Sans';
 $font-family--primary   : 'Open Sans', sans-serif;
 
-// font weights
-
-$font-weight--thin        : 100;
-$font-weight--light       : 300;
-$font-weight--medium      : 400;
-$font-weight--bold        : 700;
-$font-weight--ultra-bold  : 900;
-
 // text
 
 $base__font-size  : 16px;
@@ -21,39 +13,31 @@ $base__line       : 26px;
 
 $white            : #fff;
 $black            : #000;
-$bright-grey      : #384047;
 $cape-cod         : #354743;
 $heathered-gray   : #B5B48D;
 $maize            : #F5D29D;
 $desert-sand      : #EDD1B3;
 $barley-white     : #FFEECD;
 
+$mejs-time-colors: (
+  buffering : $heathered-gray,
+  current   : $maize,
+  hovered   : $heathered-gray,
+  float     : $heathered-gray,
+);
 //functional color variables
 
 $color-primary      : $cape-cod;
-$color-secondary    : #F5D29D;
+$color-secondary    : $maize;
 
 $color-text-light   : $heathered-gray;
 $color-text-base    : $cape-cod;
 $color-text-dark    : $black;
 
-$color-highlight : $maize;
-
+$color-highlight    : $maize;
 $color-body         : $barley-white;
-
-// border radius
-
-$br--default      : .3em;
-$br--round        : 50%;
 
 // breakpoints
 
 $brkpoint--sm     : 1px;
 $brkpoint--md     : 768px;
-
-//grid
-
-$g-col-width    : 65px;
-$g-gutter-width : 20px;
-$g-col-count    : 12;
-$g-cont-max-w   : 1400px;
