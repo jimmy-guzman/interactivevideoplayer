@@ -20,7 +20,6 @@ video.addEventListener("timeupdate", function () {
   }
 });
 
-
 for (let i = 0; i < span.length; i++) {
   span[i].addEventListener('click', function (event) {
     video.currentTime = event.target.getAttribute("data-startTime");
