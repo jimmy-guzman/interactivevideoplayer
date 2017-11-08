@@ -12,6 +12,11 @@ video.addEventListener("timeupdate", function () {
     let startTime = span[i].getAttribute("data-startTime");
     let endTime = span[i].getAttribute("data-endTime");
     let videoTime = video.currentTime;
+    if (videoTime > endTime){
+      span[i].classList.add("faded");
+    } else {
+      span[i].classList.remove("faded");
+    }
     if (videoTime >= startTime && videoTime <= endTime) {
       span[i].classList.add("highlight");
     } else {
@@ -24,7 +29,6 @@ for (let i = 0; i < span.length; i++) {
   span[i].addEventListener('click', function (event) {
     video.currentTime = event.target.getAttribute("data-startTime");
     if( !event ) event = window.event;
-    span[i].classList.remove("mouseover");
   });
   span[i].addEventListener('mouseover', function () {
     span[i].classList.add("mouseover");

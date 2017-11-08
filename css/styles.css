@@ -9,9 +9,13 @@ p {
   color: #354743; }
 
 .highlight {
-  background: #F5D29D; }
+  font-weight: bold;
+  color: #1f2a27; }
 
 .mouseover {
+  background: #FFEECD; }
+
+.faded {
   color: #B5B48D; }
 
 .container {
@@ -58,6 +62,6 @@ p {
   box-sizing: border-box; }
 
 body {
-  background: #FFEECD; }
+  background: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

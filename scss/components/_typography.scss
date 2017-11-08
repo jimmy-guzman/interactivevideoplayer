@@ -6,9 +6,14 @@ p {
 }
 
 .highlight {
-  background: $color-highlight;
+  font-weight: bold;
+  color: $color-text-dark;
 }
 
 .mouseover {
+  background: $barley-white;
+}
+
+.faded {
   color: $color-text-light;
 }
