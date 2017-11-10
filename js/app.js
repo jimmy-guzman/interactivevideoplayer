@@ -28,7 +28,9 @@ video.addEventListener("timeupdate", function () {
 for (let i = 0; i < span.length; i++) {
   span[i].addEventListener('click', function (event) {
     video.currentTime = event.target.getAttribute("data-startTime");
+    video.play();
     if( !event ) event = window.event;
+
   });
   span[i].addEventListener('mouseover', function () {
     span[i].classList.add("mouseover");
