@@ -19,9 +19,10 @@ $desert-sand      : #EDD1B3;
 $barley-white     : #FFEECD;
 
 $mejs-time-colors: (
+  total     : $white,
   buffering : $heathered-gray,
-  current   : $maize,
-  hovered   : $heathered-gray,
+  current   : $heathered-gray,
+  hovered   : $barley-white,
   float     : $heathered-gray,
 );
 //functional color variables
@@ -32,11 +33,11 @@ $color-secondary    : $maize;
 $color-text-light    : $heathered-gray;
 $color-text-base     : $cape-cod;
 $color-text-dark     : darken($cape-cod, 10%);
-$color-text-captions :$barley-white;
-$color-text-mejs     :$barley-white;
+$color-text-captions :$white;
+$color-text-mejs     :$white;
 
-$color-highlight    : $maize;
-$color-body         : $white;
+$color-text-mouseover : $barley-white;
+$color-body           : $white;
 
 // breakpoints
 
